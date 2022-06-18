@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-con{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.box{
+    width: 269px;
+    padding: 15px;
+    min-height: 430px;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.suv{
+    background: hsl(184, 100%, 22%);
+}
+.luxury{
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.content{
+    padding: 10px;
+}
+h2{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+p{
+   color: hsla(0, 0%, 100%, 0.75);
+   font-family: 'Big Shoulders Display', cursive;
+}
+.btn{
+    margin: 60px 0;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: white;
+    font-size: 15px;
+}
+btn1{
+   color: hsl(31, 77%, 52%);
+}
+btn2{
+    color: hsl(184, 100%, 22%);
+}
+btn3{
+    color: hsl(179, 100%, 13%);
+}
+.btn:hover{
+     background: transparent;
+     border: 2px solid white;
+     color: white;
+     transition: 0.4s;
+}
+.grid-btn{
+    margin: 40px 0;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background: hsl(179, 100%, 13%);
+}
+.grid-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.grid-btn:hover{
+    background: hsl(178, 100%, 5%);
+    border: 2px solid white;
+    transition: 0.4s;
+}
+/**grid template**/
+main{
+    display: grid;
+    grid-template-areas:
+    'a a b'
+    'c d d'
+    'c e e'
+     ;
+     gap: 10px;
+     width: 50%;
+     margin: auto;
+     grid-template-columns: 180px 150px 200px;
+     grid-template-rows: 170px 80px 100px;
+}
+
+main div{
+    padding: 2em;
+    text-align: center;
+}
+
+.one{
+    background-color: rgb(196, 164, 85);
+    grid-area: a;
+}
+
+.two{
+    background-color: rgb(118, 216, 223);
+    grid-area: b;
+}
+
+.three{
+    background-color: rgb(230, 163, 185);
+    grid-area: c;
+}
+
+.four{
+    background-color: rgb(189, 245, 189);
+    grid-area: d;
+}
+
+.five{
+    background-color:rgb(189, 245, 189);
+    grid-area: e;
+}
